@@ -1,13 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello</h1>
-    <h2> Hosted on Netlify</h2>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+    crossorigin="anonymous"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
+    <title>Weather app</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <br />
+    <div class="container">
+      <h1>
+        How's the weather? 👀
+      </h1>
+      <h2></h2>
+      <h3 id="city"></h3>
+      <form id="search-form">
+        <div class="mb-3">
+          <input
+            type="text"
+            autocomplete="off"
+            autofocus="on"
+            class="form-control"
+            id="search-text-input"
+            placeholder="Enter a city"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+        <button id="location-button" type="submit" class="btn btn-success">Location</button>
+
+      </form>
+      <br />
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <span id="temperature">17</span> <span id="celcius"> <a href=""">°C </a> | </span>
+            <span id="farenheit"> <a href="">°F </a> <s\/span>
+            <br />
+            🌧
+          </div>
+          <div class="col">
+            Humidity: <span id="humidity"> 87  </span> % 
+            <br />
+             Wind: <span id="wind"> 24 </span> km/h 
+          </div>
+          <div class="col" id = "description">
+            Raining
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="time">
+        <div class="row">
+          <div class="col-1">
+            Now
+            <br />
+            🌧
+          </div>
+          <div class="col-1">
+            10am
+            <br />
+            🌤
+          </div>
+          <div class="col-1">
+            11am
+            <br />
+            ⛅️
+          </div>
+          <div class="col-1">
+            12pm
+            <br />
+            ⛅️
+          </div>
+          <div class="col-1">
+            1pm
+            <br />
+            ⛅️
+          </div>
+          <div class="col-1">
+            2pm
+            <br />
+            ⛈
+          </div>
+          <div class="col-1">
+            3pm
+            <br />
+            ⛈
+          </div>
+          <div class="col-1">
+            4pm
+            <br />
+            ⛈
+          </div>
+          <div class="col-1">
+            5pm
+            <br />
+            🌬
+          </div>
+          <div class="col-1">
+            6pm
+            <br />
+            🌬
+          </div>
+          <div class="col-1">
+            7pm
+            <br />
+            🌬
+          </div>
+          <div class="col-1">
+            8pm
+            <br />
+            ✨
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            Monday
+            <br />
+            Tuesday
+            <br />
+            Wednesday
+            <br />
+            Thursday
+            <br />
+            Friday
+            <br />
+          </div>
+          <div class="col">
+            🌥
+            <br />
+            🌥
+            <br />
+            🌥
+            <br />
+            🌤
+            <br />
+            🌤
+          </div>
+          <div class="col">
+            16 8
+            <br />
+            17 9
+            <br />
+            15 8
+            <br />
+            20 9
+            <br />
+            18 9
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <h4>
+      Coded by Vy Pham
+    </h4>
+    <script src="src/index.js"></script>
+  </body>
 </html>

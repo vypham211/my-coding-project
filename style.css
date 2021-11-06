@@ -1,4 +1,39 @@
-h1 {
-    text-align: center;
-    color: blue;
-}
+body {
+    font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  }
+  h1 {
+    color: rgb(254, 20, 152);
+  }
+  
+  h2 {
+    font-size: 14pt;
+    font-style: italic;
+  }
+  h3 {
+    font-size: 18pt;
+    color: rgb(254, 20, 152);
+  }
+  
+  .col {
+    font-size: 14pt;
+    display: inline-block;
+    background-color: whitesmoke;
+  }
+  h4 {
+    font-size: 10pt;
+    font-style: italic;
+    text-align: left;
+    position: fixed;
+    left: 120px;
+  }
+  .time {
+    font-size: 14pt;
+    display: inline-block;
+    background-color: whitesmoke;
+  }
+  
+  .location-button {
+    color: green;
+  }
+  
