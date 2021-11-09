@@ -43,7 +43,6 @@ body {
      border: 1px solid whitesmoke;
      border-radius: 20px;}
 
- .temperature {
-    font-size: 18pt;
-    font-weight: bold;
+ .weather-app strong{
+    font-size: 22pt;
     }
