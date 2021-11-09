@@ -62,5 +62,13 @@ function retrievePosition(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
+function showFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrentheitTemperature = (17 * 9) / 5 + 32;
+document.querySelector("#temperature").innerHTML = Math.round(fahrentheitTemperature);
+}
+
 let locationButton = document.querySelector("#location-button");
 locationButton.addEventListener("click", retrievePosition);
+
+document.querySelector("#fahrenheit").addEventListener("click", showFahrenheitTemperature);
