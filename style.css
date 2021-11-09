@@ -42,3 +42,8 @@ body {
     margin: 30px auto;
      border: 1px solid whitesmoke;
      border-radius: 20px;}
+
+ .temperature {
+    font-size: 18pt;
+    font-weight: bold;
+    }
