@@ -25,10 +25,11 @@ let h2 = document.querySelector("h2");
 h2.innerHTML = `${day}, ${date} ${month} ${year} ${hour}:${minute}`;
 
 function showTemperature(response) {
-  document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+let temperatureElement = document.querySelector("#temperature");
+celsiusTemperature = response.data.main.temp;
+
+temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  document.querySelector("#city").innerHTML = response.data.name; 
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
@@ -64,11 +65,19 @@ function retrievePosition(event) {
 
 function showFahrenheitTemperature(event) {
   event.preventDefault();
-  let fahrentheitTemperature = (17 * 9) / 5 + 32;
-document.querySelector("#temperature").innerHTML = Math.round(fahrentheitTemperature);
+  let temperatureElement = document.querySelector("#temperature");
+  let fahrentheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+temperatureElement.innerHTML = Math.round(fahrentheitTemperature);
 }
 
+function showCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+let celsiusTemperature = null;
 let locationButton = document.querySelector("#location-button");
 locationButton.addEventListener("click", retrievePosition);
 
 document.querySelector("#fahrenheit").addEventListener("click", showFahrenheitTemperature);
+document.querySelector("#celsius").addEventListener("click", showCelsiusTemperature);
