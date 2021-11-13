@@ -19,7 +19,16 @@ body {
     font-size: 14pt;
     display: inline-block;
     background-color: #e0c3fc;
+    border-radius: 10px;
   }
+
+  .weather-forecast {
+    font-size: 14pt;
+    display: block;
+    background-color: #e0c3fc;
+    border-radius: 10px;
+  }
+
   h4 {
     font-size: 10pt;
     font-style: italic;
@@ -42,6 +51,14 @@ body {
      border: 1px solid whitesmoke;
      border-radius: 20px;}
 
- .weather-app strong{
+ .weather-app strong {
     font-size: 22pt;
     }
+
+.weather-forecast-temperature-min {
+opacity: 0.6;
+}
+
+.weather-forecast-date {
+  font-weight: bolder;
+}
