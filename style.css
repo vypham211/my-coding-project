@@ -27,6 +27,7 @@ body {
     display: block;
     background-color: #e0c3fc;
     border-radius: 10px;
+    padding: 20px;
   }
 
   h4 {
