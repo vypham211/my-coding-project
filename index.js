@@ -61,8 +61,7 @@ let forecast = response.data.daily;
 });
 
   forecastHTML = forecastHTML + `</div>`;
-  forecastElement.innerHTML = forecastHTML;s
-  console.log(forecastHTML);
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function getForecast(coordinates) {
