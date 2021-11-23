@@ -97,7 +97,7 @@ function search(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
-function searchLocation(event) {
+function searchLocation(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
   let apiKey = "5b8ccf110fd2c3394c7e941bdfc7d356";
@@ -131,4 +131,4 @@ locationButton.addEventListener("click", retrievePosition);
 document.querySelector("#fahrenheit").addEventListener("click", showFahrenheitTemperature);
 document.querySelector("#celsius").addEventListener("click", showCelsiusTemperature);
 
-displayForecast();
+getForecast(response.data.coord);
